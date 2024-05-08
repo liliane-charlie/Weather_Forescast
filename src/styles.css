@@ -1,11 +1,13 @@
 body {
   background-color: rgb(175, 201, 250);
+  background-image: url("https://www.newstoriesafrica.com/wp-content/uploads/2023/05/rbcxo9au-u-1024x683.jpg.webp");
+  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
 .weather-App {
-  background-color: white;
-  max-width: 600px;
+  background-color: transparent;
+  max-width: 1000px;
   margin: 30px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
