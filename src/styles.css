@@ -1,0 +1,153 @@
+body {
+  background-color: rgb(175, 201, 250);
+  font-family: "Roboto", sans-serif;
+}
+
+.weather-App {
+  background-color: white;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background-color: rgb(186, 215, 241);
+  border: none;
+  font-size: 16px;
+  width: 80%;
+  padding: 15px 20px;
+}
+.search-button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 8%;
+  color: beige;
+  padding: 18px 30px;
+}
+.weatherAppData {
+  display: flex;
+  justify-content: space-between;
+}
+.weaterAppCity {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+.weatherAppDetails {
+  font-size: 16px;
+  line-height: 20px;
+}
+.weatherAppDetails strong {
+  color: red;
+}
+
+main {
+  padding: 30px 0;
+}
+.weatherAppTemp {
+  display: flex;
+}
+.weatherAppValue {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.weatherAppIcon {
+  width: 88px;
+  height: 88px;
+}
+.weatherAppUnit {
+  margin-top: 14px;
+  font-size: 24px;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+.weather_forescast {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast_Card {
+  position: relative;
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(65, 65, 65, 0.308);
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  cursor: pointer;
+}
+
+.Forecast_day {
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.weather {
+  font-weight: 500;
+  font-size: 0.7em;
+  letter-spacing: 1.2px;
+  color: rgb(197, 197, 197);
+}
+
+.temp {
+  font-size: 1.8em;
+  color: white;
+}
+
+.minmaxContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.min,
+.max {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 20px;
+  gap: 4px;
+}
+
+.max {
+  align-items: flex-start;
+  border-left: 2px solid white;
+}
+
+.maxHeading,
+.minHeading {
+  font-size: 0.7em;
+  font-weight: 600;
+  color: white;
+}
+
+.maxTemp,
+.minTemp {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: rgb(8, 8, 8);
+}
