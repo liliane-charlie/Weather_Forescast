@@ -36,7 +36,7 @@ function formatDate(date) {
 
 function replaceCity(city) {
   let apiKey = "caca0doba0159abf7a94f3bbcctdd303";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(updateWeather);
 }
 function handlesearch(event) {
@@ -45,15 +45,21 @@ function handlesearch(event) {
   let cityElement = document.querySelector("#weatherAppCity");
   cityElement.innerHTML = searchInput.value;
   replaceCity(searchInput.value);
+  getForecast(response.data.city);
 }
-function displayForecast() {
+function getForecast(city) {
+  let apikey = "caca0doba0159abf7a94f3bbcctdd303";
+  apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apikey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `<span class="weather_forescast">
+      `<div class="weather_forescast">
   <div class="forecast_Card">
     <p class="Forecast_day">${day}</p>
     <svg
@@ -88,7 +94,7 @@ function displayForecast() {
       </div>
     </div>
   </div>s
-</span>`;
+</div>`;
   });
   forecastElement.innerHTML = forecastHtml;
 }
