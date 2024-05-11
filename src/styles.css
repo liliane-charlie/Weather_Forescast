@@ -1,17 +1,15 @@
 body {
   background-color: rgb(175, 201, 250);
-  background-image: url("https://www.newstoriesafrica.com/wp-content/uploads/2023/05/rbcxo9au-u-1024x683.jpg.webp");
-  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
 .weather-App {
-  max-width: 1000px;
+  background-color: white;
+  max-width: 600px;
   margin: 30px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 30px;
-  background-color: white;
 }
 header {
   border-bottom: 1px solid #f9f7fe;
@@ -39,7 +37,6 @@ header {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
-  color: white;
 }
 .weatherAppDetails {
   font-size: 16px;
@@ -61,8 +58,8 @@ main {
   font-weight: bold;
 }
 .weatherAppIcon {
-  width: 88px;
-  height: 88px;
+  width: 102px;
+  height: 102px;
 }
 .weatherAppUnit {
   margin-top: 14px;
@@ -73,84 +70,40 @@ footer {
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: white;
+  color: gray;
 }
-.weather_forescast {
-  width: fit-content;
-  position: relative;
+.weather_forecast {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.weather_forecast_date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather_forecast_icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.weather_forecast_temperature {
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
   justify-content: center;
 }
 
-.forecast_Card {
-  position: relative;
-  width: 220px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
-  border-radius: 10px;
-  backdrop-filter: blur(30px);
-  background-color: rgba(65, 65, 65, 0.308);
-  border: 1px solid rgba(255, 255, 255, 0.089);
-  cursor: pointer;
+.weather_forecast_temperature_max {
+  padding: 0 8px;
 }
-
-.Forecast_day {
-  font-weight: 700;
-  font-size: 0.9em;
-  letter-spacing: 1.2px;
-  color: white;
-}
-
-.weather {
-  font-weight: 500;
-  font-size: 0.7em;
-  letter-spacing: 1.2px;
-  color: rgb(197, 197, 197);
-}
-
-.temp {
-  font-size: 1.8em;
-  color: white;
-}
-
-.minmaxContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.min,
-.max {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0px 20px;
-  gap: 4px;
-}
-
-.max {
-  align-items: flex-start;
-  border-left: 2px solid white;
-}
-
-.maxHeading,
-.minHeading {
-  font-size: 0.7em;
-  font-weight: 600;
-  color: white;
-}
-
-.maxTemp,
-.minTemp {
-  font-size: 0.6em;
-  font-weight: 500;
-  color: rgb(8, 8, 8);
+.weather_forecast_temperature_min {
+  padding: 0 8px;
 }
