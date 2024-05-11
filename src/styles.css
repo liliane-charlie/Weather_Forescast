@@ -1,13 +1,18 @@
 body {
-  background-color: rgb(175, 201, 250);
+  background-color: transparent;
   font-family: "Roboto", sans-serif;
+  background-image: url("https://img.freepik.com/photos-premium/paysage-camerounais-riviere-collines-au-coucher-du-soleil-generative-ai-art-belle-vue_163597-715.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .weather-App {
   background-color: white;
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: rgba(163, 194, 230, 0.4) 5px 5px, rgba(35, 69, 119, 0.3) 10px 10px,
+    rgba(40, 63, 126, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
   border-radius: 16px;
   padding: 30px;
 }
@@ -70,20 +75,21 @@ footer {
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: gray;
+  color: grey;
 }
 .weather_forecast {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-}
+  
 
 .weather_forecast_date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
+  color: rgba(21, 21, 22, 0.4);
+  font-size: 20px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  opacity: 0.7;
 }
 
 .weather_forecast_icon {
@@ -103,7 +109,9 @@ footer {
 
 .weather_forecast_temperature_max {
   padding: 0 8px;
+  opacity: 0.6;
 }
 .weather_forecast_temperature_min {
   padding: 0 8px;
+  opacity: 0.4;
 }
